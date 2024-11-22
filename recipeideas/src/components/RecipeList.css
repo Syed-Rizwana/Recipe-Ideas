@@ -1,0 +1,38 @@
+/* Container for the recipe list */
+.recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  /* No recipes fallback container */
+  .no-recipes {
+    text-align: center;
+    padding: 40px;
+    color: #555;
+  }
+  
+  .no-recipes p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .no-recipes-image {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .recipe-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+  }
+  
